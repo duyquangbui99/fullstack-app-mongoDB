@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <h1>Shopping Cart</h1>
+            <ul class="nav-links">
+                <li><button class="nav-button" data-section="products">Products</button></li>
+                <li><button class="nav-button" data-section="cart">Cart</button></li>
+                <li><button id="logout" onclick="logout()">Logout</button></li>
+            </ul>
+            <button id="google-login" onclick="loginWithGoogle()">Login with Google</button>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <!-- Products Section -->
+            <section id="products-section" class="section">
+                <h2>Add New Product</h2>
+                <form id="add-product-form" onsubmit="event.preventDefault(); addProduct();">
+                    <input type="text" id="product-name" placeholder="Product Name" required>
+                    <input type="number" id="product-price" placeholder="Price" required>
+                    <button type="submit">Add Product</button>
+                </form>
+                <h2>Available Products</h2>
+                <ul id="product-list"></ul>
+            </section>
+
+            <!-- Cart Section -->
+            <section id="cart-section" class="section">
+                <h2>Cart</h2>
+                <form id="add-to-cart-form" onsubmit="event.preventDefault(); addToCart();">
+                    <select id="product-select" required></select>
+                    <button type="submit">Add to Cart</button>
+                </form>
+                <ul id="cart-list"></ul>
+                <p id="total-price">Total Price: $0.00</p>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
