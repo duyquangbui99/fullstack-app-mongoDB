@@ -2,7 +2,7 @@
 
 ## Overview
 This is a **full-stack shopping cart application** built with **Node.js, Express, MongoDB, and JWT authentication**. Users can **log in with Google OAuth**, add products, manage their shopping cart, and view available products. 
-<img width="980" alt="login" src="https://github.com/user-attachments/assets/fdb941f0-a2b3-44ae-981a-f696f7889591" />
+<img width="1158" alt="default" src="https://github.com/user-attachments/assets/ef0d0ca8-f295-4ca0-8cdc-d280fd5bc461" />
 <img width="1163" alt="products" src="https://github.com/user-attachments/assets/71666d51-a86d-4c32-9362-e5dd3ce42826" />
 <img width="1159" alt="cart" src="https://github.com/user-attachments/assets/8a121ff2-cfa3-4b18-9336-cec3c82d7c05" />
 
